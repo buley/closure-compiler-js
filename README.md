@@ -56,7 +56,7 @@ module.exports = {
         languageIn: 'ECMASCRIPT6',
         languageOut: 'ECMASCRIPT5',
         compilationLevel: 'ADVANCED',
-        warningLevel: 'VERBOSE',
+        warningLevel: 'VERBOSE'
       },
     })
   ]
@@ -78,7 +78,7 @@ gulp.task('script', function() {
           warningLevel: 'VERBOSE',
           outputWrapper: '(function(){\n%output%\n}).call(this)',
           jsOutputFile: 'output.min.js',  // outputs single file
-          createSourceMap: true,
+          createSourceMap: true
         }))
       .pipe(gulp.dest('./dist'));
 });
